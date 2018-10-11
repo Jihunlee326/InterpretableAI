@@ -50,13 +50,13 @@ SN = TP / P
 5. Specificity(True negative rate)
 특이도, negative로 예측한 내용 중에 실제 negative의 비율
 SP = TN / (TN + FP) = TN / N
-[그림7]
+[그림8]
 
 6. ROC & AUROC(Area Under the Receiver Operating Characteristic curve)
 가로축을 FP Rate(Specificity), 세로축을 TP Rate(Sensitive)로 시각화 한 그래프
 *Specificity= TN / N
 *Sensitive = TP / P
-[그림8]
+[그림9]
 [그래프1]
 *민감도, 특이도가 '1'일때 가장 성능이 좋음으로 가로축을 1-Specificity 로 표현하면
 X = 0, Y= 1일때 최고의 성능을 나타냄을 보일 수 있다.
