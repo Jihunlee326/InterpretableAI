@@ -71,7 +71,7 @@ So if we simply always answer "true", we have 100% recall.)*
   
 * 민감도, 특이도가 '1'일때 가장 성능이 좋음으로 가로축을 1-Specificity 로 표현하면  
 X = 0, Y= 1일때 최고의 성능을 나타냄을 보일 수 있다.  
-즉, AUROC로 면적이 '1'일때 최고의 성능을 나타낸다.  
+* 즉, AUROC로 면적이 '1'일때 최고의 성능을 나타낸다.  
 * AUROC = 0.5인 부분은 민감도와 특이도를 동시에 높일 수 없는 기준이다.  
   
 ### 7. Precision Recall Rlot & AUPR(e Area Under the Precision-Recall curve)  
@@ -90,11 +90,14 @@ PR의 경우 Baseline을 기준으로 모델의 정확도를 평가한다.
   
   
   
-[출처]
-http://bcho.tistory.com/1206
-[참고문헌]
-Confusion matrix https://classeval.wordpress.com/introduction/basic-evaluation-measures/
-ROC Plot https://classeval.wordpress.com/introduction/introduction-to-the-roc-receiver-operating-characteristics-plot/
-Precision Recall Plot https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/
-Precision, Recall, F-Score  http://daeson.tistory.com/197
-https://datascienceschool.net/view-notebook/661128713b654edc928ecb455a826b1d/
+  
+  
+  
+[출처]  
+http://bcho.tistory.com/1206  
+[참고문헌]  
+Confusion matrix https://classeval.wordpress.com/introduction/basic-evaluation-measures/  
+ROC Plot https://classeval.wordpress.com/introduction/introduction-to-the-roc-receiver-operating-characteristics-plot/  
+Precision Recall Plot https://classeval.wordpress.com/introduction/introduction-to-the-precision-recall-plot/  
+Precision, Recall, F-Score  http://daeson.tistory.com/197  
+https://datascienceschool.net/view-notebook/661128713b654edc928ecb455a826b1d/  
