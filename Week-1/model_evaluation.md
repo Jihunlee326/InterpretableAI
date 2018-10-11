@@ -28,17 +28,18 @@
 * Positive(P) = TP + FN  
 * Negative(N) = FP + TN  
   
+  
 이제 이 지표로 모델을 평가해보자.
-
+-------------------------------------------------
 1. Accuracy
 전체 데이터 중에서, 제대로 분류된 데이터의 비율
 ACC = (TP + TN) / (P + N)
-[그림4]
+<p align="center"><img src="../images/figure4.png" width="320"></p>
             
 2. Error Rate
 Accuracy와 반대로, 전체 데이터 중에서 잘못 분류한 비율
 ERR = (FN + FP) / (P + N)
-[그림5]
+<p align="center"><img src="../images/figure5.png" width="320"></p>
 
 3. Precision
 정밀성, Positive로 예측한 내용 중에 실제 positive의 비율
