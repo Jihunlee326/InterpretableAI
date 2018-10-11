@@ -31,36 +31,36 @@
   
 이제 이 지표로 모델을 평가해보자.
 -------------------------------------------------
-1. Accuracy  
+### 1. Accuracy  
 전체 데이터 중에서, 제대로 분류된 데이터의 비율  
 ACC = (TP + TN) / (P + N)  
 <p align="center"><img src="../images/figure4.png" width="240"></p>
             
-2. Error Rate  
+### 2. Error Rate  
 Accuracy와 반대로, 전체 데이터 중에서 잘못 분류한 비율  
 ERR = (FN + FP) / (P + N)  
 <p align="center"><img src="../images/figure5.png" width="240"></p>
 
-3. Precision  
+### 3. Precision  
 정밀성, Positive로 예측한 내용 중에 실제 positive의 비율  
-Precision is about being precise. In common English, being precise means:   
+*(Precision is about being precise. In common English, being precise means:   
 if you give an answer, the answer will very likely be correct.   
-So even if you answered only one question, and you answered this question correctly, you are 100% precise.  
+So even if you answered only one question, and you answered this question correctly, you are 100% precise.)*
 PREC = TP / (TP + FP)  
 <p align="center"><img src="../images/figure7.png" width="240"></p>
 
-4. Sensitivity(Recall or True positive Rate)
-민감도, 모델이 얼마나 정확하게 positive 값을 찾았는가
-Recall (as opposed to precision) is not so much about answering questions correctly 
-but more about answering all questions that have answer "true" with the answer "true". 
-So if we simply always answer "true", we have 100% recall.
-SN = TP / P
-[그림6]
+### 4. Sensitivity(Recall or True positive Rate)  
+민감도, 모델이 얼마나 정확하게 positive 값을 찾았는가  
+*(Recall (as opposed to precision) is not so much about answering questions correctly   
+but more about answering all questions that have answer "true" with the answer "true".   
+So if we simply always answer "true", we have 100% recall.)*  
+SN = TP / P  
+<p align="center"><img src="../images/figure6.png" width="240"></p>
 
-5. Specificity(True negative rate)
-특이도, negative로 예측한 내용 중에 실제 negative의 비율
-SP = TN / (TN + FP) = TN / N
-[그림8]
+### 5. Specificity(True negative rate)  
+특이도, negative로 예측한 내용 중에 실제 negative의 비율  
+SP = TN / (TN + FP) = TN / N  
+<p align="center"><img src="../images/figure8.png" width="240"></p>
 
 6. ROC & AUROC(Area Under the Receiver Operating Characteristic curve)
 가로축을 FP Rate(Specificity), 세로축을 TP Rate(Sensitive)로 시각화 한 그래프
