@@ -1,24 +1,29 @@
 ## Confusion Matrix
 
 이진 분류 모델에서 암의 양성과 음성 데이터를 잘 분류하는 모델(100%로 분류)을 가정하면 그림과 같다.
+  
 
 <p align="center"><img src="../images/figure1.png" width="320"></p>
 
+  
 하지만 실제 세계에서 정확도 100%인 모델은 매우 드문 케이스, 따라서 아래 그림과 같이 예측된다.
 
+  
 <p align="center"><img src="../images/figure2.png" width="640"></p>
 
+  
 이를, 테이블로 표현하면 다음과 같다.
 
+  
 <p align="center"><img src="../images/figure3.png" width="592"></p>
 
-*True Positive(TP) : 양성(true)을 양성(true)으로 예측 = good
-*False Positive(FP) : 음성(False)을 양성(true)으로 예측 = wrong
-*False Negative(FN) : 양성(true)을 음성(false)으로 예측 = wrong
-*True Negative(TN) : 음성(false)을 음성(false)으로 예측 = good
-*Positive(P) = TP + FN
-*Negative(N) = FP + TN
-
+*True Positive(TP) : 양성(true)을 양성(true)으로 예측 = good  
+*False Positive(FP) : 음성(False)을 양성(true)으로 예측 = wrong  
+*False Negative(FN) : 양성(true)을 음성(false)으로 예측 = wrong  
+*True Negative(TN) : 음성(false)을 음성(false)으로 예측 = good  
+*Positive(P) = TP + FN  
+*Negative(N) = FP + TN  
+  
 이제 이 지표로 모델을 평가해보자.
 
 1. Accuracy
