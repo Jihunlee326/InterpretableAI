@@ -74,7 +74,7 @@ X = 0, Y= 1일때 최고의 성능을 나타냄을 보일 수 있다.
 * 즉, AUROC로 면적이 '1'일때 최고의 성능을 나타낸다.  
 * AUROC = 0.5인 부분은 민감도와 특이도를 동시에 높일 수 없는 기준이다.  
   
-### 7. Precision Recall Rlot & AUPR(e Area Under the Precision-Recall curve)  
+### 7. Precision Recall Rlot & AUPR(Area Under the Precision-Recall curve)  
 가로축을 Recall, 세로축을 Precision으로 시각화한 그래프  
 * Sensitive(Recall) = TP / P  
 * Precision = TP / (TP + FP)  
@@ -89,9 +89,9 @@ PR의 경우 Baseline을 기준으로 모델의 정확도를 평가한다.
 보통, Baseline = P / (P + N)으로 정한다.  
   
   
-  
-  
-  
+    
+    
+    
   
 [출처]  
 http://bcho.tistory.com/1206  
