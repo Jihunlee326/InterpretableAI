@@ -1,12 +1,12 @@
 ## Confusion Matrix
 
-이진 분류 모델에서 암의 양성과 음성 데이터를 잘 분류하는 모델(100%로 분류)을 가정하면,
+이진 분류 모델에서 암의 양성과 음성 데이터를 잘 분류하는 모델(100%로 분류)을 가정하면 그림과 같다.
 
-<p align="center"><img src="../images/figure1.png" width="240"></p>
+<p align="center"><img src="../images/figure1.png" width="514"></p>
 
-하지만, 실제 세계에서 정확도 100%인 모델은 매우 드문 케이스, 따라서 아래 그림과 같이 예측된다.
+하지만 실제 세계에서 정확도 100%인 모델은 매우 드문 케이스, 따라서 아래 그림과 같이 예측된다.
 
-[그림2]
+<p align="center"><img src="../images/figure2.png"></p>
 
 이를, 테이블로 표현하면 다음과 같다.
 
