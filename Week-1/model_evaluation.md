@@ -6,11 +6,11 @@
 
 하지만 실제 세계에서 정확도 100%인 모델은 매우 드문 케이스, 따라서 아래 그림과 같이 예측된다.
 
-<p align="center"><img src="../images/figure2.png"></p>
+<p align="center"><img src="../images/figure2.png" width="640"></p>
 
 이를, 테이블로 표현하면 다음과 같다.
 
-[그림3]
+<p align="center"><img src="../images/figure3.png" width="592"></p>
 
 *True Positive(TP) : 양성(true)을 양성(true)으로 예측 = good
 *False Positive(FP) : 음성(False)을 양성(true)으로 예측 = wrong
