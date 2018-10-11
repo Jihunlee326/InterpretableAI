@@ -1,4 +1,4 @@
-#### Confusion Matrix
+## Confusion Matrix
 
 이진 분류 모델에서 암의 양성과 음성 데이터를 잘 분류하는 모델(100%로 분류)을 가정하면,
 
