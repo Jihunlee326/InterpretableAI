@@ -45,7 +45,7 @@ ERR = (FN + FP) / (P + N)
 정밀성, Positive로 예측한 내용 중에 실제 positive의 비율  
 *(Precision is about being precise. In common English, being precise means:   
 if you give an answer, the answer will very likely be correct.   
-So even if you answered only one question, and you answered this question correctly, you are 100% precise.)*
+So even if you answered only one question, and you answered this question correctly, you are 100% precise.)*  
 PREC = TP / (TP + FP)  
 <p align="center"><img src="../images/figure7.png" width="240"></p>
 
@@ -62,16 +62,16 @@ SN = TP / P
 SP = TN / (TN + FP) = TN / N  
 <p align="center"><img src="../images/figure8.png" width="240"></p>
 
-6. ROC & AUROC(Area Under the Receiver Operating Characteristic curve)
-가로축을 FP Rate(Specificity), 세로축을 TP Rate(Sensitive)로 시각화 한 그래프
-*Specificity= TN / N
-*Sensitive = TP / P
-[그림9]
-[그래프1]
-*민감도, 특이도가 '1'일때 가장 성능이 좋음으로 가로축을 1-Specificity 로 표현하면
-X = 0, Y= 1일때 최고의 성능을 나타냄을 보일 수 있다.
-즉, AUROC로 면적이 '1'일때 최고의 성능을 나타낸다.
-*AUROC = 0.5인 부분은 민감도와 특이도를 동시에 높일 수 없는 기준이다.
+### 6. ROC & AUROC(Area Under the Receiver Operating Characteristic curve)  
+가로축을 FP Rate(Specificity), 세로축을 TP Rate(Sensitive)로 시각화 한 그래프  
+* Specificity= TN / N  
+* Sensitive = TP / P  
+<p align="center"><img src="../images/figure9.png" width="440"></p>
+<p align="center"><img src="../images/graph1.png" width="312"></p>
+* 민감도, 특이도가 '1'일때 가장 성능이 좋음으로 가로축을 1-Specificity 로 표현하면  
+X = 0, Y= 1일때 최고의 성능을 나타냄을 보일 수 있다.  
+즉, AUROC로 면적이 '1'일때 최고의 성능을 나타낸다.  
+* AUROC = 0.5인 부분은 민감도와 특이도를 동시에 높일 수 없는 기준이다.  
 
 7. Precision Recall Rlot & AUPR(e Area Under the Precision-Recall curve)
 가로축을 Recall, 세로축을 Precision으로 시각화한 그래프
