@@ -31,7 +31,7 @@ that the image x is an out-distribution example, otherwise.
 
   
   
-  
-Question 1) Temperatue scaling의 증명  
-Question 2) Input preprocessing과정에서 theta의 의미  
-Question 3) Input preprocessing 식에서 sign 함수의 의미  
+## Question  
+1) Temperatue scaling의 증명  
+2) Input preprocessing과정에서 theta의 의미  
+3) Input preprocessing 식에서 sign 함수의 의미  
