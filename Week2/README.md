@@ -2,24 +2,24 @@ ENHANCING THE RELIABILITY OF OUT-OF-DISTRIBUTION IMAGE DETECTION IN NEURAL NETWO
 
 [Paper] https://arxiv.org/pdf/1706.02690.pdf
 
-### -Abstact
+## Abstact
 We propose a simple and effective method, ODIN(Out-of-Distribution detector for Neural Networks),
 for detecting out-of-distribution examples in neural networks. Our method does net require
 re-training the neural network and is easily implementable on any modern neural architecture.
 
-## 1. Temperature Scaling  
+### 1. Temperature Scaling  
 A good manipulation of tmeperature T can push the softmax scores of in- and out-of-distribution images
 further apart from each other, making the out-of-distribution images distinguishable.
 
 <p align="center"><img src="../images/week2_eq_1.png" width="540"></p>
 
-## 2. Input Preprocessing  
+### 2. Input Preprocessing  
 Note that the pertubations can be easily computed by back-propagating the gradient of the cross-entropy loss
 w.r.t the input.
 
 <p align="center"><img src="../images/week2_eq_2.png" width="540"></p>
 
-## 3. Out-of-distribution detector  
+### 3. Out-of-distribution detector  
  3-1) calculate the preprocessed image x^ according to the equation (2).  
  3-2) feed the preprocessed images x^ into the nerual network, calculate its softmax score S(x^; T)  
  3-3) compare the socre to the threshold δ.  
