@@ -24,7 +24,7 @@ w.r.t the input.
  3-2) feed the preprocessed images x^ into the nerual network, calculate its softmax score S(x^; T)
  3-3) compare the socre to the threshold δ.
  
- <p align="center"><img src="../images/week2_eq_3.png" width="320"></p>
+ <p align="center"><img src="../images/week2_detector.png" width="320"></p>
 
 We say that the image x is an in-distribution example if the softmax score is above the threshold and 
 that the image x is an out-distribution example, otherwise.
