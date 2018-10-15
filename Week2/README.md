@@ -48,3 +48,11 @@ that the image x is an out-distribution example, otherwise.
 => 그리고, T값이 충분히 커지면 결국 softmax score는 U1에 영향을 받음으로 더 이상 커질 필요가 없다.
 2) Input preprocessing 과정에서 theta의 의미  
 3) Input preprocessing 식에서 sign함수의 의미  
+//
+Input preprocessing 의 효과?
+=> T가 어느정도 커지면 효과가 없기에 또 다른 직관을 설명함
+=> in-distribution과 out-distribution의 softmax score가 비슷할 때 in-distribution image의 [식#]의 값이 더 큰 것을 볼 수 있음
+=> 따라서 input preprocessing을 거치면 in-distribution의 softmax score가 더 커짐
+=> theta값이 충분히 작은 경우 nn의 prediction은 변함이 없음
+=> 하지만 theta를 무시할 수 없을 때 [식#]의 변화가 생기고 성능 저하를 유발할 수 있다.
+
