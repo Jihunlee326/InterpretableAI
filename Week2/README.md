@@ -49,7 +49,7 @@ In-distribution case의 경우, nn의 가장 큰 output은 나머지 output보�
 이는 in-distribution image의 remaining output(excluding the largest output)이  
 out-distribution image 보다 더 잘 구분됨을 뜻한다.  
   
-다시 [식4]를 간략화 하여 S ∝ (U1 − U2 /2T )/T 으로 나타내면 softmax score는 U1과 U2/2T에 비레한다.  
+다시 [식4]를 간략화 하여 S ∝ (U1 − U2 /2T )/T 으로 나타내면 softmax score는 U1과 U2/2T에 비례한다.  
 그리고 U1은 in-distribution image가 out-distributin image보다 높은 softmax score를 갖도록 만들고, (S ∝ U)  
 U2는 정반대의 효과를 가진다. (S ∝ −U2)  
   
