@@ -33,17 +33,21 @@ that the image x is an out-distribution example, otherwise.
   
 ## Question  
 1) Temperatue scaling의 증명  
-=> 식(1)을 테일러 급수를 사용해 전개하여  
+식(1)을 테일러 급수를 사용해 전개하여  
 <p align="center"><img src="../images/week2_eq_3.png" width="480"></p>
 U1(X), U2(X)로 간략화,  
-<p align="center"><img src="../images/week2_eq_4.png" width="480"></p>
-=> By definition, U1 measures the extent to which the largest unnormalized  
-   output of the neural network deviates from the remaining outputs; while U2 measures the extent  
-   to which the remaining smaller outputs deviate from each other.  
-=> in-distribution case의 경우, nn의 가장 큰 output은 나머지 output보다 훨씬 더 크다. Figur5-(a)  
-   이는 nn이 in-distribution은 높은 confident prediction을 하기 때문이다.  
-=> 또한, 이미지의 U1값이 비슷하다면 in-distribution image는 out-distribution image보다 큰 E[U2|U1]값을 가진다.  
-   이는 in-distribution image의 remaining output(excluding the largest output)이 out-distribution image 보다 더 잘 구분됨을 뜻한다. 
+<p align="center"><img src="../images/week2_eq_4.png" width="480"></p>  
+
+1-a) By definition, U1 measures the extent to which the largest unnormalized  
+     output of the neural network deviates from the remaining outputs,  
+     while U2 measures the extent to which the remaining smaller outputs deviate from each other. 
+
+1-b) in-distribution case의 경우, nn의 가장 큰 output은 나머지 output보다 훨씬 더 크다. 
+<p align="center"><img src="../images/week2_eq_4.png" width="480"></p> 
+     이는 nn이 in-distribution은 높은 confident prediction을 하기 때문이다. 
+     
+1-c) 또한, 이미지의 U1값이 비슷하다면 in-distribution image는 out-distribution image보다 큰 E[U2|U1]값을 가진다.  
+     이는 in-distribution image의 remaining output(excluding the largest output)이 out-distribution image 보다 더 잘 구분됨을 뜻한다. 
 => 다시 [식4]를 간략화 하여 [식6]으로 나타내면 softmax score는 U1과 U2/2T에 비레한다.
 => 그리고 U1은 in-distribution image가 out-distributin image보다 높은 softmax score를 갖도록 만들고, [S 비례 U1]
 => U2는 정반대의 효과를 가진다. [S 비례 -U2]
