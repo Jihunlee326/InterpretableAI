@@ -33,7 +33,10 @@ that the image x is an out-distribution example, otherwise.
   
 ## Question  
 1) Temperatue scaling의 증명  
-=> 식(1)을 테일러 급수를 사용해 전개하여[식4] U1(X), U2(X)로 간략화, 식[5]
+=> 식(1)을 테일러 급수를 사용해 전개하여  
+<p align="center"><img src="../images/week2_eq_3.png" width="320"></p>
+U1(X), U2(X)로 간략화,  
+<p align="center"><img src="../images/week2_eq_4.png" width="320"></p>
 => By definition, U1 measures the extent to which the largest unnormalized  
    output of the neural network deviates from the remaining outputs; while U2 measures the extent  
    to which the remaining smaller outputs deviate from each other.  
