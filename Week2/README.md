@@ -36,14 +36,14 @@ that the image x is an out-distribution example, otherwise.
 식(1)을 테일러 급수를 사용해 전개하여  
 <p align="center"><img src="../images/week2_eq_3.png" width="480"></p>
 U1(X), U2(X)로 간략화,  
-<p align="center"><img src="../images/week2_eq_4.png" width="480"></p>  
+<p align="center"><img src="../images/week2_eq_4.png" width="520"></p>  
 
 1-a) By definition, U1 measures the extent to which the largest unnormalized  
      output of the neural network deviates from the remaining outputs,  
      while U2 measures the extent to which the remaining smaller outputs deviate from each other. 
 
 1-b) in-distribution case의 경우, nn의 가장 큰 output은 나머지 output보다 훨씬 더 크다. 
-<p align="center"><img src="../images/week2_fi_1.png" width="480"></p> 
+<p align="center"><img src="../images/week2_fi_1.png" width="270"></p> 
      이는 nn이 in-distribution은 높은 confident prediction을 하기 때문이다. 
      (U1 값이 가장 큰 in-distribution의 red 그래프)
      
