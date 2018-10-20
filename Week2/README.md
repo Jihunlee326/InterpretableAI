@@ -45,8 +45,8 @@ from the remaining outputs, while U2 measures the extent to which the remaining 
 1-b)  
 In-distribution case의 경우, nn의 가장 큰 output은 나머지 output보다 훨씬 더 크다.   
 <p align="center"><img src="../images/week2_fi_1.png" width="220"></p> 
-이는 nn이 in-distribution은 높은 confident prediction을 하기 때문이다.  
-*U1 값이 가장 큰 in-distribution의 red 그래프    
+이는 nn이 in-distribution은 높은 confident prediction을 하기 때문이다. 
+*U1 값이 가장 큰 in-distribution의 red 그래프. 
   
 1-c)  
 또한, 이미지의 U1값이 비슷하다면 in-distribution image는 out-distribution image보다 큰 E[U2|U1]값을 가진다.  
@@ -62,10 +62,10 @@ U2는 정반대의 효과를 가진다. (S ∝ −U2)
 따라서, 충분히 큰 T값을 선택하는 것이 in-distribution과 out-distribution의 softmax socre의 차이를 크게 만든다.  
 그리고, T값이 충분히 커지면 결국 softmax score는 U1에 영향을 받음으로 더 이상 커질 필요가 없다.  
   
-#### 2) Input preprocessing 과정에서 theta의 의미  
+#### 2) Input preprocessing 과정에서 theta의 의미
 #### 3) Input preprocessing 식에서 sign함수의 의미  
 
-Input preprocessing의 효과
+Input preprocessing의 효과. 
 2,3-a)  
 T가 어느정도 커지면 효과가 없기에 또 다른 직관을 설명함  
 <p align="center"><img src="../images/week2_eq_5.png" width="480"></p>  
