@@ -12,4 +12,11 @@ Our key idea on the proposed loss is to additionally minimize the Kullback- Leib
 —> 이 문제를 해결하기 위해 새로운 generative adversarial network를 제안한다.
 —> GAN은 out-of-distribution data(boundrary samples)를 생성하기 위해 사용된다.
 —> 마지막으로 classifier loss와 confidence loss를 동시에 minimize할 수 있는 joint training scheme를 구성한다.
-—> 또한, 동등하게 confident classifier는 GAN의 성능도 향상시킨다
+—> 또한, 동등하게 confident classifier는 GAN의 성능도 향상시킨다. 
+
+
+
+
+#2 Uncertainty-Aware Learning from Demonstration Using Mixture Density Networks with Sampling-Free Variance Modeling
+
+[paper] https://arxiv.org/abs/1709.02249
