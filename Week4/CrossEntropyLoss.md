@@ -34,4 +34,8 @@ Square loss function과 더불어 양대 손실함수로 사용된다.
 <p align="center"><img src="../images/week4_eq_12.png" width="540"></p>
 <p align="center"><img src="../images/week4_eq_13.png" width="540"></p>
 
--> 정리하면 신경망 출력이 0 ~ 1 사이로 나오는 경우 loss함수로써 cross entropy loss를 사용할 수 있다.
+-> 정리하면 신경망 출력이 0 ~ 1 사이로 나오는 경우 loss함수로써 cross entropy loss를 사용할 수 있다.  
+
+
+*출처 : https://www.slideshare.net/jaepilko10/ss-91071277
+
