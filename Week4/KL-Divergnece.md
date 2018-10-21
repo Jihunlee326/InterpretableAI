@@ -22,3 +22,5 @@ DKL(Q||P) != DKL(P||Q), --> 비대칭적이기 때문에 두 분포 사이의 �
 3. 두 확률분포가 동일하다면 KL-Divergence값은 0이 된다. 
 4. KL-Divergence를 분해하면 정보 엔트로피 + 크로스 엔트로피로 나눌 수 있다.  
 <p align="center"><img src="../images/week4_eq_2.png" width="540"></p>
+
+*출처 : https://brunch.co.kr/@chris-song/69#comments
