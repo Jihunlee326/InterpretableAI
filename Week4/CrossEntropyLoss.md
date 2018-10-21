@@ -16,7 +16,7 @@ Square loss function과 더불어 양대 손실함수로 사용된다.
 이때, 중요한 것은 확률변수 X의 분포함수  
 <p align="center"><img src="../images/week4_eq_6.png" width="540"></p>
 일반화화면, E[f(x)] = sigma(f(x)p(x))  
-<p align="center"><img src="../images/week4_eq_7.png" width="540"></p>
+<p align="center"><img src="../images/week4_eq_7.png" width="480"></p>
 
 #### Cross-Entropy  
 다른 사건의 확률을 곱해서 entropy를 계산한 것  
@@ -25,7 +25,7 @@ Square loss function과 더불어 양대 손실함수로 사용된다.
 이걸 신경망의 손실함수로 사용해보자!  
 
 가령 신경망의 MSL는  
-<p align="center"><img src="../images/week4_eq_9.png" width="540"></p>
+<p align="center"><img src="../images/week4_eq_9.png" width="320"></p>
 이걸 cross-entropy loss로 대체하면  
 <p align="center"><img src="../images/week4_eq_10.png" width="540"></p>
 
