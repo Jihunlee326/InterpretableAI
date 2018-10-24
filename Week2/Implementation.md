@@ -12,6 +12,6 @@ https://github.com/ShiyuLiang/odin-pytorch
    Single GPU version for Wide ResNet will be released soon in the future.  
  
  [Test Result]
- <p align="center"><img src="../images/week2_result_1.png" width="540"></p>
+ <p align="center"><img src="../images/week2_result_1.png" width="480"></p>
  
  
