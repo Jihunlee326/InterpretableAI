@@ -6,6 +6,13 @@ We consider a new loss function, called “confidence loss”.
 
 Our key idea on the proposed loss is to additionally minimize the Kullback- Leibler (KL) divergence from the predictive distribution on out-of-distribution samples to the uniform one in order to give less confident predictions on them. Then, in- and out-of-distributions are expected to be more separable. 
 
+Our motivation is that such inference algorithms can work better if the classifiers are trained so that they map the samples from in- and out-of-distributions into the output space separately. Namely, we primarily focus on training an improved classifier, and then use prior detectors under the trained model to measure its performance.
+
+
+2.1 CONFIDENT CLASSIFIER FOR OUT-OF-DISTRIBUTION
+
+[그림1]
+
 —> out-of-distribution에서 예측되는 분포로부터 uniform한 분포로 예측되는 KL 분포의 값을  minimize하는데 새로 정의한 confidence loss가 사용된다.
 —> 이를 통해 in- and out- distribution의 차이는 명확해 질 것이다.
 —> 하지만 최적화된 confidence loss값을 찾기 위해서는 많은 양의 out-of-distribution 데이터가 필요하다.
