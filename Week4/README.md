@@ -18,8 +18,9 @@ Our motivation is that such inference algorithms can work better if the classifi
 
 2.1 CONFIDENT CLASSIFIER FOR OUT-OF-DISTRIBUTION
 
-# Confidence loss
-[그림1]
+#### Confidence loss
+
+<p align="center"><img src="../images/week4_paper_eq_1.png" width="320"></p>
 
 where KL denotes the Kullback-Leibler (KL) divergence, U (y) is the uniform distribution and β > 0 is a penalty parameter. 
 
@@ -32,6 +33,8 @@ where KL denotes the Kullback-Leibler (KL) divergence, U (y) is the uniform dist
 근데 불가능하잖아..  
 To address the issue, we suggest to sample out-of-distribution close to in-distribution, which could be more effective in improving the detection performance, without any assumption on testing out-of-distribution.
 그럼 더 효율적인 out-distribution 샘플을 생성해보자!  
+
+<p align="center"><img src="../images/week4_paper_fi_1.png" width="320"></p>
 
 figure 1은 이에 대한 실험 결과  
 (a) [-20, 20]^2 region에서 green sample(out-of-distribution)을 생성한 결과
