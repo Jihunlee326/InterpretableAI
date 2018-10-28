@@ -49,7 +49,7 @@ This implies that training out-of-distribution samples nearby the in-distributio
 
 #### ADVERSARIAL GENERATOR FOR OUT-OF-DISTRIBUTION
 
-<p align="center"><img src="../images/week4_paper_eq_2.png" width="320"></p>
+<p align="center"><img src="../images/week4_paper_eq2.png" width="320"></p>
 
 Original GAN과 다르게 generator가 분배 성능을 감소시키는 p_out을 생성하도록 만들자. 
 where θ is the model parameter of a classifier trained on in-distribution. 
@@ -70,8 +70,10 @@ the second term (b) corresponds to the original GAN loss ==> 그래도 분포에
 
 #### JOINT TRAINING METHOD OF CONFIDENT CLASSIFIER AND ADVERSARIAL GENERATOR
 
-<p align="center"><img src="../images/week4_paper_eq_3.png" width="320"></p>
+<p align="center"><img src="../images/week4_paper_eq3.png" width="320"></p>
 
+<p align="center"><img src="../images/week4_paper_fi_2.png" width="320"></p>
+<p align="center"><img src="../images/week4_paper_fi_3.png" width="320"></p>
 
 
 
