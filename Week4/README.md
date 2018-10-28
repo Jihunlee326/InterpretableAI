@@ -23,6 +23,27 @@ Our motivation is that such inference algorithms can work better if the classifi
 
 where KL denotes the Kullback-Leibler (KL) divergence, U (y) is the uniform distribution and β > 0 is a penalty parameter. 
 
+새로 제안하는 confidence loss는 out-of-distribution 샘플에 대해서는 uniform한 형태(zero)만든다. 
+반면에 in-distribution 샘플은 label-dependent probability를 따른다. 
+--> in-distribuion 샘플이 out-distribution보다 높은 예측값을 출력하 수 있도록 설계되었다. 
+--> 물론 KL발산으로 인해 예측값이 변경될 수 있지만 네트워크의 표현력이 더 강하기 때문에 영향력이 미비한것을 확인했다. 
+
+사실 KLD를 최소화하기 위해서는 거의 무한한 out-distribution 샘플으 학습해야 한다. 
+근데 불가능하잖아..  
+To address the issue, we suggest to sample out-of-distribution close to in-distribution, which could be more effective in improving the detection performance, without any assumption on testing out-of-distribution.
+그럼 더 효율적인 out-distribution 샘플을 생성해보자!  
+
+figure 1은 이에 대한 실험 결과  
+(a) [-20, 20]^2 region에서 green sample(out-of-distribution)을 생성한 결과
+(b) 이에 대한 decision boundrary of classifier
+(c) 같은 영역에서 다른 분포로 out-distribution 을 생성함
+(d) 이에 대한 decision boundrary of classifier  
+
+이러한 실험 결과는 다음을 암시한다.
+This implies that training out-of-distribution samples nearby the in-distribution region could be more effective in improving the detection performance. Our underlying intuition is that the effect of boundary of in-distribution region might propagate to the entire out-of-distribution space.
+즉, 분산 영역 근처의 샘플으 학습하는 것이 성능을 향상시키는데 효과적일 수 있고, 근본적인 직관은 분배 영역 경계의 영향이 전체 분배 영역 밖으로 전파될 수 있다는 것이다.  
+--> 따라서 이러한 out-distribuion samples를 생성할 수 있느 새로운 GAN을 제안하겠다. 
+
 
 
 
