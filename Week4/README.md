@@ -20,15 +20,15 @@ Confidence loss는 out-of-distribution에서 예측되는 분포로부터 unifor
 
 ### 2.1 CONFIDENT CLASSIFIER FOR OUT-OF-DISTRIBUTION
 
-<p align="center"><img src="../images/week4_paper_eq_1.png" width="520"></p>
+<p align="center"><img src="../images/week4_paper_eq_1.png" width="640"></p>
 
 where KL denotes the Kullback-Leibler (KL) divergence, U (y) is the uniform distribution and β > 0 is a penalty parameter. 
 
-새로 제안하는 confidence loss는 out-of-distribution samples에 대해서는 uniform한 형태(zero)를 만든다.  
-반면에 in-distribution samples은 label-dependent probability를 따른다. 
---> in-distribuion smaple은 out-distribution보다 높은 예측값을 출력하 수 있도록 설계되었다. 
---> KL divergence으로 예측값이 변경될 수 있지만 네트워크의 표현력이 더 강하기 때문에 영향력이 미비한것을 확인했다.   
-
+새로 제안하는 confidence loss는 out-of-distribution samples에 대해서는 uniform한 형태(zero)를 만든다.   
+반면에 in-distribution samples은 label-dependent probability를 따른다.  
+in-distribuion smaple은 out-distribution보다 높은 예측값을 출력하 수 있도록 설계되었다.   
+KL divergence으로 예측값이 변경될 수 있지만 네트워크의 표현력이 더 강하기 때문에 영향력이 미비한것을 확인했다.  
+  
 사실 KLD를 최소화하기 위해서는 거의 무한한 out-distribution 샘플으 학습해야 한다. 
 근데 불가능하잖아..  
 To address the issue, we suggest to sample out-of-distribution close to in-distribution, which could be more effective in improving the detection performance, without any assumption on testing out-of-distribution.
