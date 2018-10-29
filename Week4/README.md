@@ -48,9 +48,10 @@ This implies that training out-of-distribution samples nearby the in-distributio
   
 **즉, 분산 영역 근처의 샘플을 학습하는 것이 성능을 향상시키는데 효과적일 수 있고, 근본적인 직관은 분배 영역 경계의 영향이 전체 분배 영역 밖으로 전파될 수 있다는 것이다.**  
 
-따라서 이러한 out-distribuion samples를 생성할 수 있는 새로운 GAN을 제안하겠다.   
-
-#### ADVERSARIAL GENERATOR FOR OUT-OF-DISTRIBUTION
+따라서, 이러한 out-distribuion samples를 생성할 수 있는 새로운 GAN을 제안하겠다.   
+  
+  
+### 2.2 ADVERSARIAL GENERATOR FOR OUT-OF-DISTRIBUTION
 
 <p align="center"><img src="../images/week4_paper_eq2.png" width="680"></p>
 
