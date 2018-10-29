@@ -81,7 +81,7 @@ the second term (b) corresponds to the original GAN loss(그래도 분포에서 
 
 ### 3 EXPERIMENTAL RESUTLS  
   
-<p align="center"><img src="../images/week4_paper_fi_3.png" width="320"></p>
+<p align="center"><img src="../images/week4_paper_fi_3.png" width="680"></p>
 
 TEST DATASETS  
 - CIFAR10  
@@ -89,7 +89,7 @@ TEST DATASETS
 - Image Net  
 - LSUN  
   
-<p align="center"><img src="../images/week4_paper_fi_2.png" width="320"></p>
+<p align="center"><img src="../images/week4_paper_fi_2.png" width="680"></p>
 
 As shown in Figure 3(a), the samples of original GAN cover the high-density area of the target distribution while those of proposed GAN does its boundary one (see Figure 3(b)).  
   
