@@ -56,6 +56,7 @@ This implies that training out-of-distribution samples nearby the in-distributio
 <p align="center"><img src="../images/week4_paper_eq2.png" width="680"></p>
 
 where θ is the model parameter of a classifier trained on in-distribution.  
+  
 Original GAN과 다르게 generator가 분배 성능을 감소시키는 p_out을 생성하도록 만들자.  
 
 the first term (a) corresponds to a replacement of the out-of-distribution Pout in (1)’s KL loss with the generator distribution PG.
@@ -70,11 +71,11 @@ the second term (b) corresponds to the original GAN loss(그래도 분포에서 
   
 정리하면, 생성되는 분포는 in-distribution samples로부터 너무 멀리 않도록 생성되야 한다.  
 
-따라서, (3)의 KLD 항 (a)는 분포가 어긋난 sampels이 생성되더라도 거의 '0'  
+따라서 (3)의 KLD 항 (a)는 분포가 어긋난 sampels이 생성되더라도 거의 '0'  
 그러나 sample이 경계로부터 멀리 떨어져 있다면 GAN 손실(b)는 높아야 한다.  
 
 
-#### JOINT TRAINING METHOD OF CONFIDENT CLASSIFIER AND ADVERSARIAL GENERATOR
+### 2.3 JOINT TRAINING METHOD OF CONFIDENT CLASSIFIER AND ADVERSARIAL GENERATOR
 
 <p align="center"><img src="../images/week4_paper_eq3.png" width="320"></p>
 
