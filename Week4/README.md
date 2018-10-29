@@ -29,8 +29,7 @@ where KL denotes the Kullback-Leibler (KL) divergence, U (y) is the uniform dist
 in-distribuion smaple은 out-distribution보다 높은 예측값을 출력하 수 있도록 설계되었다.   
 KL divergence으로 예측값이 변경될 수 있지만 네트워크의 표현력이 더 강하기 때문에 영향력이 미비한것을 확인했다.  
   
-**근데 사실 KLD를 최소화하기 위해서는 거의 무한한 out-distribution 샘플을 학습해야 한다.**  
-**but, impossible..    
+**근데 사실 KLD를 최소화하기 위해서는 거의 무한한 out-distribution 샘플을 학습해야 한다.. but, impossible**  
   
 To address the issue, we suggest to sample out-of-distribution close to in-distribution, which could be more effective in improving the detection performance, without any assumption on testing out-of-distribution.  
   
@@ -47,7 +46,7 @@ To address the issue, we suggest to sample out-of-distribution close to in-distr
   
 This implies that training out-of-distribution samples nearby the in-distribution region could be more effective in improving the detection performance. Our underlying intuition is that the effect of boundary of in-distribution region might propagate to the entire out-of-distribution space.  
   
-**즉, 분산 영역 근처의 샘플을 학습하는 것이 성능을 향상시키는데 효과적일 수 있고, 근본적인 직관은 분배 영역 경계의 영향이 전체 분배 영역 밖으로 전파될 수 있다는 것이다.  
+**즉, 분산 영역 근처의 샘플을 학습하는 것이 성능을 향상시키는데 효과적일 수 있고, 근본적인 직관은 분배 영역 경계의 영향이 전체 분배 영역 밖으로 전파될 수 있다는 것이다.**  
 
 따라서 이러한 out-distribuion samples를 생성할 수 있는 새로운 GAN을 제안하겠다.   
 
@@ -55,21 +54,23 @@ This implies that training out-of-distribution samples nearby the in-distributio
 
 <p align="center"><img src="../images/week4_paper_eq2.png" width="680"></p>
 
-Original GAN과 다르게 generator가 분배 성능을 감소시키는 p_out을 생성하도록 만들자. 
-where θ is the model parameter of a classifier trained on in-distribution. 
+where θ is the model parameter of a classifier trained on in-distribution.  
+Original GAN과 다르게 generator가 분배 성능을 감소시키는 p_out을 생성하도록 만들자.  
 
 the first term (a) corresponds to a replacement of the out-of-distribution Pout in (1)’s KL loss with the generator distribution PG.
+  
+the first term (a)는 식(1)의 KLD손실에서의 out-distribuion(P_out)을 generator의 distirubion(P_g)로 대체한다.  
+이는 generator를 사용해 in-distribution의 log negative likelihood을 최소화하기 때문에 generator가 low-density sample을 생성하도록 강제한다.  
+  
+**= P_in (x) ≈ exp (KL (U (y) ∥ P_θ (y | x)))** 
+  
+the second term (b) corresponds to the original GAN loss(그래도 분포에서 벗어나는 sampel을 생성해야지..)    
+(Suppose that the model parameter of classifier θ is set appropriately such that the classifier produces the uniform distribution for out of distribution samples.)  
+  
+정리하면, 생성되는 분포는 in-distribution samples로부터 너무 멀리 않도록 생성되야 한다.  
 
-the first term (a)는 식(1)의 KLD손실에서의 out-distribuion(P_out)을 generator의 distirubion(P_g)로 대체한다.
-이는 generator를 사용해 in-distribution의 log negative likelihood을 최소화하기 때문에 generator가 low-density sample을 생성하도록 강제한다.
-== Pin (x) ≈ exp (KL (U (y) ∥ Pθ (y | x))). 
-
-the second term (b) corresponds to the original GAN loss ==> 그래도 분포에서 벗어나는 샘플을 생성해야지..  
-(Suppose that the model parameter of classifier θ is set appropriately such that the classifier produces the uniform distribution for out of distribution samples.). 
-
-정리하면, 생성되는 분포는 in-distribution 샘플로부터 너무 멀리 않도록 생성되야 한다.
-
-그러면 (3)의 KL 분기 항 (a)은 분포가 어긋난 샘플이 생성 되더라도 거의 0입니다. 그러나, 샘플이 경계로부터 멀리 떨어져 있다면, (3)에서의 GAN 손실 (b)은 높아야한다. 즉, 샘플을 갖는 GAN 손실력은 분포 공간으로부터 너무 멀지 않아야한다. 그러므로, 제안 된 손실은 발생기가 배급 공간의 저밀도 경계에있는 샘플을 생성하도록 유도 할 수 있다고 기대할 수있다. 우리는 3.2 절의 실험적 증거도 제공한다.
+따라서, (3)의 KLD 항 (a)는 분포가 어긋난 sampels이 생성되더라도 거의 '0'  
+그러나 sample이 경계로부터 멀리 떨어져 있다면 GAN 손실(b)는 높아야 한다.  
 
 
 #### JOINT TRAINING METHOD OF CONFIDENT CLASSIFIER AND ADVERSARIAL GENERATOR
