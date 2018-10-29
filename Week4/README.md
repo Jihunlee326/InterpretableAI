@@ -77,11 +77,22 @@ the second term (b) corresponds to the original GAN loss(그래도 분포에서 
 
 ### 2.3 JOINT TRAINING METHOD OF CONFIDENT CLASSIFIER AND ADVERSARIAL GENERATOR
 
-<p align="center"><img src="../images/week4_paper_eq3.png" width="320"></p>
+<p align="center"><img src="../images/week4_paper_eq3.png" width="720"></p>
 
-<p align="center"><img src="../images/week4_paper_fi_2.png" width="320"></p>
+### 3 EXPERIMENTAL RESUTLS  
+  
 <p align="center"><img src="../images/week4_paper_fi_3.png" width="320"></p>
 
+TEST DATASETS  
+- CIFAR10  
+- SVHN  
+- Image Net  
+- LSUN  
+  
+<p align="center"><img src="../images/week4_paper_fi_2.png" width="320"></p>
+
+As shown in Figure 3(a), the samples of original GAN cover the high-density area of the target distribution while those of proposed GAN does its boundary one (see Figure 3(b)).  
+  
 
 
 #2 Uncertainty-Aware Learning from Demonstration Using Mixture Density Networks with Sampling-Free Variance Modeling
