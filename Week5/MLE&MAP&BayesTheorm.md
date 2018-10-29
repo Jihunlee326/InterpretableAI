@@ -40,6 +40,11 @@ P(θ|X) = posterior
   
 θ^ = argmax_θ f(θ|X) = argmax_θ f(X|θ)f(θ) / f(X) = argmax_θ L(θ;X)f(θ) / f(X)  
 이때, f(X)는 θ의 영향을 받지 않는다. 따라서 θ^ = argmax_θ L(θ;X)f(θ)  
-즉, f(θ)를 알고 있다면 MAP가 가능하다.  
---> θ에 대한 assumption을 통해 결과를 향상시킬 수 있다.  
+**즉, f(θ)를 알고 있다면 MAP가 가능하다.  
+--> θ에 대한 assumption을 통해 결과를 향상시킬 수 있다.**  
+  
+example) 시험성적이 gaussian distribution을 estimation하고 있다면, 
+mean은 반드시 시험 점수 안에 포함 그리고 이 점수들은 대체로 40~60점 사이에 분포하고 있을 것..  
+--> f(θ)를 가정했기 때문에 MAP를 사용할 수 있다.  
+--> 하지만 잘못된 prior assumption은 성능을 저하시킬 수 있다.  
 
