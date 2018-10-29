@@ -1,4 +1,4 @@
-## 1. MLE(Maximum Likelihood Estimation)  
+## MLE(Maximum Likelihood Estimation)  
 Random variable의 parameter를 estimate하는 방법  
 
 다음과 같이 생각해보자.  
@@ -17,7 +17,7 @@ Random variable의 parameter를 estimate하는 방법
 
 정리하면 θ^ = argmax_θ L(θ;X) = argmax_θ f(X|θ)  
 
-## 2. MAP(Maximum A Posterior estimation)  
+## MAP(Maximum A Posterior estimation)  
 주어진 데이터에 대해 최대확률을 가지는 θ를 estimate하는 방법  
   
 θ^ = argmax_θ f(θ|X)  
@@ -28,4 +28,18 @@ MAP는 여러 parameter 중 데이터가 주어졌을 때 가장 확률이 높�
 *but! MAP를 계산하기 위해서는 f(θ|X)가 필요한데, 우리가 관찰할 수 있는것은 f(X|θ) 뿐...  
 --> 여기서 Bayes' Theorm 개념이 등장*  
 
-## 3. Bayes' Theorm  
+## Bayes' Theorm  
+베이스 이론은 P(Y|X)와 P(X|Y)의 관계를 표현한다.  
+  
+P(Y|X) = P(X|Y)P(Y) / P(X)  
+where,   
+P(X|Y) = likelihood  
+P(θ) = prior  
+P(θ|X) = posterior  
+위 식을 통해 우리가 관측할 수 있는 데이터 이외에도 **데이터에 대한 적절한 가정이 있다면, 더 우수한 prameter estimation이 가능함을 의미한다.**  
+  
+θ^ = argmax_θ f(θ|X) = argmax_θ f(X|θ)f(θ) / f(X) = argmax_θ L(θ;X)f(θ) / f(X)  
+이때, f(X)는 θ의 영향을 받지 않는다. 따라서 θ^ = argmax_θ L(θ;X)f(θ)  
+즉, f(θ)를 알고 있다면 MAP가 가능하다.  
+--> θ에 대한 assumption을 통해 결과를 향상시킬 수 있다.  
+
