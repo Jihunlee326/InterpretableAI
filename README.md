@@ -9,4 +9,6 @@ MODULABS
 - Week4 : 
   1. TRAINING CONFIDENCE-CALIBRATED CLASSIFIERS FOR DETECTING OUT-OF-DISTRIBUTION SAMPLES  
   2. Uncertainty-Aware Learning from Demonstration Using Mixture Density Networks with Sampling-Free Variance Modeling  
-- Week5 :     
+- Week5 :  
+  1. PREDICTION UNDER UNCERTAINTY WITH ERRORENCODING NETWORKS  
+  2. What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?  
