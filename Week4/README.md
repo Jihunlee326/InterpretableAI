@@ -29,8 +29,8 @@ where KL denotes the Kullback-Leibler (KL) divergence, U (y) is the uniform dist
 in-distribuion smaple은 out-distribution보다 높은 예측값을 출력하 수 있도록 설계되었다.   
 KL divergence으로 예측값이 변경될 수 있지만 네트워크의 표현력이 더 강하기 때문에 영향력이 미비한것을 확인했다.  
   
-*근데 사실 KLD를 최소화하기 위해서는 거의 무한한 out-distribution 샘플을 학습해야 한다.   
-*but, impossible..    
+**근데 사실 KLD를 최소화하기 위해서는 거의 무한한 out-distribution 샘플을 학습해야 한다.**  
+**but, impossible..    
   
 To address the issue, we suggest to sample out-of-distribution close to in-distribution, which could be more effective in improving the detection performance, without any assumption on testing out-of-distribution.  
   
@@ -47,9 +47,9 @@ To address the issue, we suggest to sample out-of-distribution close to in-distr
   
 This implies that training out-of-distribution samples nearby the in-distribution region could be more effective in improving the detection performance. Our underlying intuition is that the effect of boundary of in-distribution region might propagate to the entire out-of-distribution space.  
   
-*즉, 분산 영역 근처의 샘플을 학습하는 것이 성능을 향상시키는데 효과적일 수 있고, 근본적인 직관은 분배 영역 경계의 영향이 전체 분배 영역 밖으로 전파될 수 있다는 것이다.  
+**즉, 분산 영역 근처의 샘플을 학습하는 것이 성능을 향상시키는데 효과적일 수 있고, 근본적인 직관은 분배 영역 경계의 영향이 전체 분배 영역 밖으로 전파될 수 있다는 것이다.  
 
-따라서 이러한 out-distribuion samples를 생성할 수 있느 새로운 GAN을 제안하겠다.   
+따라서 이러한 out-distribuion samples를 생성할 수 있는 새로운 GAN을 제안하겠다.   
 
 #### ADVERSARIAL GENERATOR FOR OUT-OF-DISTRIBUTION
 
