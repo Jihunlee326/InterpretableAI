@@ -11,7 +11,7 @@ This error can be encoded as a low- dimensional latent variable which is fed bac
 --> 확률론적을 학습을 수행해서(Auto Encoder 이야기 하는듯..) 잘못된 예측을 얻으 후 Residual learning으로 이 에러를 저차원의 잠재변수(latent)로  
 인코딩하여 정확히 다음 프레임을 예측하 수 있는 형태의 학습 방법을 제안한는듯..   
 
-[그림 1]
+<p align="center"><img src="../images/week5_paper1_fi_1.png" width="520"></p>
 
 위의 모델을 EEN으로 부르겠음
 해당 모델에서 3가지의 function mappong을 수행하는데..  
