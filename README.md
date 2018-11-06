@@ -12,3 +12,4 @@ MODULABS
 - Week5 :  
   1. PREDICTION UNDER UNCERTAINTY WITH ERRORENCODING NETWORKS  
   2. What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?  
+- Week6 : Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning
