@@ -8,9 +8,7 @@
 #### Bayesian NN 자세한 설명
 기존의 Deterministic Neural Network, 
   
-  
 ![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X)  
-  
   
 labels Y given data X with weights w.  
   
@@ -40,9 +38,7 @@ Evidence는 Input이 주어졌을 경우의 output의 확률,
   
 추상적인 관점에서 input과 output을 하나의 dataset으로 바라보자.  
   
-  
 ![equation](https://latex.codecogs.com/gif.latex?p%28W%7CD%29%20%3D%20%5Cfrac%7Bp%28D%7CW%29%20*%20p%28W%29%20%7D%7Bp%28D%29%7D%20%5Cquad%5Cquad%5Cquad%5Cquad%5Cquad%284%29)  
-  
   
   
 위에 같이 표현할 수 있을 것이다.  
