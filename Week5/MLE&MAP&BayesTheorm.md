@@ -15,8 +15,10 @@ Random variable의 parameter를 estimate하는 방법
 이때, likelihood는 L(θ; x1, x2, ... , xn) = L(θ;X) = f(X|θ) = f(x1, x2, ..., xn|θ)
 따라서 MLE는 likelihood를 최대로 하는 θ를 추정하는 방법이라 볼 수 있다.  
 
-정리하면 θ^ = argmax_θ L(θ;X) = argmax_θ f(X|θ)  
-
+정리하면  
+  
+![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctheta%7D%20%3D%20argmax_%7B%5Ctheta%7D%20L%28%5Ctheta%3BX%29%20%3D%20argmax_%7B%5Ctheta%7D%20f%28X%7C%5C%3B%5Ctheta%5C%3B%29)  
+  
 ## MAP(Maximum A Posterior estimation)  
 주어진 데이터에 대해 최대확률을 가지는 θ를 estimate하는 방법  
   
