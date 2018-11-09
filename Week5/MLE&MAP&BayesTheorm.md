@@ -43,7 +43,8 @@ P(θ|X) = posterior
   
 ![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctheta%7D%20%3D%20argmax_%7B%5Ctheta%7Df%28%5Ctheta%7CX%29%20%3D%20argmax_%7B%5Ctheta%7D%5Cfrac%7Bf%28X%7C%5Ctheta%29f%28%5Ctheta%29%7D%7Bf%28X%29%7D%20%3D%20argmax_%7B%5Ctheta%7D%5Cfrac%7BL%28%5Ctheta%3BX%29f%28%5Ctheta%29%7D%7Bf%28X%29%7D)  
   
-이때, f(X)는 θ의 영향을 받지 않는다. 
+이때, f(X)는 θ의 영향을 받지 않는다. 따라서  
+  
 ![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctheta%7D%20%3D%20argmax_%7B%5Ctheta%7DL%28%5Ctheta%3BX%29f%28%5Ctheta%29)  
   
 **즉, f(θ)를 알고 있다면 MAP가 가능하다.  
