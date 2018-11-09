@@ -7,7 +7,9 @@
 
 #### Bayesian NN 자세한 설명
 Y = w * X  
-$$( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} $$  
+$$ 
+x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} 
+$$  
 \\( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)
 \\({e}^{i\pi}+1=0\\)  
 labels Y given data X with weights w.  
