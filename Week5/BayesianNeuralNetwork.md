@@ -6,12 +6,9 @@
 ==> 계산량이 많을듯..
 
 #### Bayesian NN 자세한 설명
-html header: <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-출처: http://dataleaf.tistory.com/entry/Markdown에서-수식-입력하기 [정보의 잎사귀]
-전통적인 NN의 Linear regression prediction을 생각해보면,  
 Y = w * X  
-\\( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)  
+$$( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} $$  
+\\( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)
 \\({e}^{i\pi}+1=0\\)  
 labels Y given data X with weights w.  
   
