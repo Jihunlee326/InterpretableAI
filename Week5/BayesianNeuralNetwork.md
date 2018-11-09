@@ -71,7 +71,7 @@ BNN에서는 수식의 아래부분 CONSTANT = Evidence = Marginal Likelihood를
   
 이렇게 학습하면 BNN은 입력에 대한 출력으로 Conditional Expectation을 통해 분포를 구하게 된다.  
 
-
-[Reference : https://towardsdatascience.com/adding-uncertainty-to-deep-learning-ecc2401f2013]
-[Reference : http://mlg.eng.cam.ac.uk/yarin/blog_2248.html]
-[Reference : https://taeoh-kim.github.io/blog/bayesian-deep-learning-introduction/]
+------------------------------------------------------------------------
+[Reference : https://towardsdatascience.com/adding-uncertainty-to-deep-learning-ecc2401f2013]  
+[Reference : http://mlg.eng.cam.ac.uk/yarin/blog_2248.html]  
+[Reference : https://taeoh-kim.github.io/blog/bayesian-deep-learning-introduction/]  
