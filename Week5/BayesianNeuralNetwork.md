@@ -8,7 +8,7 @@
 #### Bayesian NN 자세한 설명
 기존의 Deterministic Neural Network, 
   
--> ![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X)  <-
+![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X){:.aligncenter}
   
 labels Y given data X with weights w.  
   
