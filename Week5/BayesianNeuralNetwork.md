@@ -6,6 +6,11 @@
 ==> 계산량이 많을듯..
 
 #### Bayesian NN 자세한 설명
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    displayAlign: "center"
+});
+</script>
 기존의 Deterministic Neural Network,  
 ![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X)   
 labels Y given data X with weights w.  
