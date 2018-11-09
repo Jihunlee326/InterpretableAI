@@ -22,7 +22,7 @@ Random variable의 parameter를 estimate하는 방법
 ## MAP(Maximum A Posterior estimation)  
 주어진 데이터에 대해 최대확률을 가지는 θ를 estimate하는 방법  
   
-θ^ = argmax_θ f(θ|X)  
+![equation](https://latex.codecogs.com/gif.latex?argmax_%7B%5Ctheta%7D%20f%28X%7C%5C%3B%5Ctheta%5C%3B%29)  
   
 MLE는 오직 현재 주어진 데이터만을 잘 설명하는 parameter를 찾는 반면에,  
 MAP는 여러 parameter 중 데이터가 주어졌을 때 가장 확률이 높은 θ를 찾는것  
@@ -33,15 +33,19 @@ MAP는 여러 parameter 중 데이터가 주어졌을 때 가장 확률이 높�
 ## Bayes' Theorm  
 베이스 이론은 P(Y|X)와 P(X|Y)의 관계를 표현한다.  
   
-P(Y|X) = P(X|Y)P(Y) / P(X)  
+![equation](https://latex.codecogs.com/gif.latex?P%28Y%7CX%29%20%3D%20%5Cfrac%7BP%28X%7CY%29P%28Y%29%7D%7BP%28X%29%7D)  
+  
 where,   
 P(X|Y) = likelihood  
 P(θ) = prior  
 P(θ|X) = posterior  
 위 식을 통해 우리가 관측할 수 있는 데이터 이외에도 **데이터에 대한 적절한 가정이 있다면, 더 우수한 prameter estimation이 가능함을 의미한다.**  
   
-θ^ = argmax_θ f(θ|X) = argmax_θ f(X|θ)f(θ) / f(X) = argmax_θ L(θ;X)f(θ) / f(X)  
-이때, f(X)는 θ의 영향을 받지 않는다. 따라서 θ^ = argmax_θ L(θ;X)f(θ)  
+![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctheta%7D%20%3D%20argmax_%7B%5Ctheta%7Df%28%5Ctheta%7CX%29%20%3D%20argmax_%7B%5Ctheta%7D%5Cfrac%7Bf%28X%7C%5Ctheta%29f%28%5Ctheta%29%7D%7Bf%28X%29%7D%20%3D%20argmax_%7B%5Ctheta%7D%5Cfrac%7BL%28%5Ctheta%3BX%29f%28%5Ctheta%29%7D%7Bf%28X%29%7D)  
+  
+이때, f(X)는 θ의 영향을 받지 않는다. 
+![equation](https://latex.codecogs.com/gif.latex?%5Chat%7B%5Ctheta%7D%20%3D%20argmax_%7B%5Ctheta%7DL%28%5Ctheta%3BX%29f%28%5Ctheta%29)  
+  
 **즉, f(θ)를 알고 있다면 MAP가 가능하다.  
 --> θ에 대한 assumption을 통해 결과를 향상시킬 수 있다.**  
   
