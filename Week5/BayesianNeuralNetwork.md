@@ -7,9 +7,9 @@
 
 #### Bayesian NN 자세한 설명
 기존의 Deterministic Neural Network, 
-$$
-![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X) {:.align center}
-$$
+  
+![equation](https://latex.codecogs.com/gif.latex?%24%24%20Y%20%3D%20w%20*%20X%20%24%24)  
+  
 labels Y given data X with weights w.  
   
 여기서 목표는 loss function을 minimize하는 parameter w를 찾는것  
