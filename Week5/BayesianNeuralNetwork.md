@@ -9,7 +9,8 @@
 
 전통적인 NN의 Linear regression prediction을 생각해보면,  
 Y = w * X  
-\\({e}^{i\pi}+1=0\\)
+\\( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)  
+\\({e}^{i\pi}+1=0\\)  
 labels Y given data X with weights w.  
   
 여기서 목표는 loss function을 minimize 하는 parameter w를 찾는것.  
