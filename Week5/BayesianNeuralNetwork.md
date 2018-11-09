@@ -7,11 +7,7 @@
 
 #### Bayesian NN 자세한 설명
 Y = w * X  
-$$ 
-x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} 
-$$  
-\\( x(t)=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\)
-\\({e}^{i\pi}+1=0\\)  
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
 labels Y given data X with weights w.  
   
 여기서 목표는 loss function을 minimize 하는 parameter w를 찾는것.  
