@@ -64,7 +64,7 @@ Evidence는 Input이 주어졌을 경우의 output의 확률,
   
 즉, 주어진 데이터에서 P(W|D)를 Maximize하는 w를 구한다.  
   
-하지만 uncertainiy가 고려된 P(W|D)를 구하기 위해서는 likelihood + prior를 maximize 하는 문제로 접근해서는 안된다.  
+하지만 uncertainty가 고려된 P(W|D)를 구하기 위해서는 likelihood + prior를 maximize 하는 문제로 접근해서는 안된다.  
 이 부분이 BNN과 MAP의 차이    
   
 BNN에서는 수식의 아래부분 CONSTANT = Evidence = Marginal Likelihood를 구하기 위해 Variational Inference를 통해 근사화하는 것부터 시작한다.  
