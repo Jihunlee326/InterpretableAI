@@ -60,7 +60,7 @@ Evidence는 Input이 주어졌을 경우의 output의 확률,
   
 기존에 MAP문제에서는 p(w|D)를 구하기 위해서 likelihood + prior 를 동시에 maximize하는 문제로 풀었다.  
   
-![equation](https://latex.codecogs.com/gif.latex?%7BW_%7BMAP%7D%7D%20%3D%20argmax_%7Bw%7D%28logP%28D%7CW%29%20&plus;%20logP%28w%29%29%20%5Cquad%5Cquad%5Cquad%5Cquad%5Cquad)  
+![equation](https://latex.codecogs.com/gif.latex?%7Bw_%7BMAP%7D%7D%20%3D%20argmax_%7Bw%7D%28logP%28D%7Cw%29%20&plus;%20logP%28w%29%29%20%5Cquad%5Cquad%5Cquad%5Cquad%5Cquad)  
   
 즉, 주어진 데이터에서 P(W|D)를 Maximize하는 w를 구한다.  
   
