@@ -1,4 +1,5 @@
 #### Bayesian Neural Networks
+------------------------
 - Model parameter를 deterministic하게 point로 보지 않고 distribution으로 보는 것  
 - 이 distribution을 계산하기 위해 intractable posterior p(w|X,Y)를 계산해야 하고  
 - 이를 근사하기 위해 Variational Inference를 사용함  
@@ -6,6 +7,7 @@
 ==> 계산량이 많을듯..
 
 #### Bayesian NN 자세한 설명
+---------------------------------
 기존의 Deterministic Neural Network, 
   
 ![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X)  
