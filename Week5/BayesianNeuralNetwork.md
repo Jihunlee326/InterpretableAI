@@ -8,7 +8,7 @@
 #### Bayesian NN 자세한 설명
 Y = w * X  
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
-labels Y given data X with weights w.  
+labels Y given data X with weights w.    d
   
 여기서 목표는 loss function을 minimize 하는 parameter w를 찾는것.  
   
