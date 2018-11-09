@@ -6,25 +6,26 @@
 ==> 계산량이 많을듯..
 
 #### Bayesian NN 자세한 설명
-Y = w * X  
-![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X)  
+기존의 Deterministic Neural Network,  
+![equation](https://latex.codecogs.com/gif.latex?Y%20%3D%20w%20*%20X)   
 labels Y given data X with weights w.  
   
-여기서 목표는 loss function을 minimize 하는 parameter w를 찾는것.  
+여기서 목표는 loss function을 minimize하는 parameter w를 찾는것  
   
 이제 Y를 Gaussian distribution으로 가정해보자.  
   
-p(Y|X,w) --- 식1)
+![equation](https://latex.codecogs.com/gif.latex?p%28Y%7CX%2Cw%29%20%5Cquad%20%5Cquad%20%5Cquad%20%5Cquad%20%5Cquad%20%281%29)  
   
-그러면 w에 대해 data likelihood를 maximize 하는 식으로 바꿀 수 있다.  
+그러면 w에 대해 data likelihood를 maximize하는 식으로 바꿀 수 있다.  
   
-여기에 어떠한 uncertainty를 esimate 하는 bayesian 문제로 식을 바꿔보면 다음과 같이 표현할 수 있다.  
+여기에 어떠한 uncertainty를 esimate하는 bayesian 문제로 식을 바꿔보면 다음과 같이 표현할 수 있다.  
   
-p(Y|X,w) * p(w) --- 식2)  
-
+![equation](https://latex.codecogs.com/gif.latex?p%28Y%7CX%2Cw%29%20*%20p%28w%29%20%5Cquad%20%5Cquad%20%5Cquad%20%5Cquad%20%5Cquad%20%282%29)  
+  
 그리고 bayesian rule을 통해 확률을 다음과 같이 변경할 수 있다.  
   
-p(w|X,Y) = p(Y|X,w) * p(w) / CONSTANT or P(Y|X)   (*CONSTANT 항은 결국 likelihood의 marginal likelihood로 볼 수 있음(=evidence)) --- 식3)  
+![equation](https://latex.codecogs.com/gif.latex?p%28w%7CX%2CY%29%20%3D%20%5Cfrac%7Bp%28Y%7CX%2Cw%29%20*%20p%28w%29%7D%7BCONSTANT%20%5C%3B%20or%20%5C%3B%20P%28Y%7CX%29%7D%5Cquad%20%5Cquad%20%5Cquad%20%5Cquad%20%5Cquad%20%283%29)  
+(*CONSTANT 항은 결국 likelihood의 marginal likelihood로 볼 수 있음(=evidence))  
   
 의미론적으로 식을 해석해보면 Posterioir(=p(w|X,Y))는 input, output이 주어졌을 경우의 parameter의 확률,  
 Likelihood는 input과 parameter가 주어졌을 때 output의 확률,  
